@@ -1,5 +1,5 @@
 
-A small ISO C99 library to manage simple dynamic string vectors a-la argv
+A small ISO C90 library to manage simple dynamic string vectors a-la argv
 =========================================================================
 
 Author: <carlovalenti@ac.c4q.nyc>

@@ -1,5 +1,5 @@
 /**
- * A small ISO C99 library to manage simple dynamic string vectors a-la argv
+ * A small ISO C90 library to manage simple dynamic string vectors a-la argv
  * Author: <carlovalenti@ac.c4q.nyc>, public domain
  *
  * Interface:
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "argv.h"
 
-#define    ARGV_ALLOC_GRAIN    0x0F  // grow by multiples of this many entries
+#define    ARGV_ALLOC_GRAIN    0x0F  /* grow by multiples of this many entries */
 
 struct argv *argv_init()
 {
@@ -22,14 +22,14 @@ struct argv *argv_init()
 	newargv->vector_size = 1;
 	newargv->argc = 0;
 	newargv->argv = (char**)malloc(sizeof(char*) * newargv->vector_size);
-	newargv->argv[0] = NULL; // end of vector sentinel
+	newargv->argv[0] = NULL; /* end of vector sentinel */
 	return newargv;
 }
 
 long argv_find(struct argv *argv, const char *string)
 {
-	assert(argv != NULL && argv->argv != NULL);
 	char **p = argv->argv;
+	assert(argv != NULL && argv->argv != NULL);
 	if (string == NULL)
 		return -1;
 	while (*p != NULL) {
