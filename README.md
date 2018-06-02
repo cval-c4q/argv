@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e1e44c7bbbd4466dad51db05df391ffc)](https://www.codacy.com/app/cval-c4q/argv?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cval-c4q/argv&amp;utm_campaign=Badge_Grade)
 
 A small ISO C90 library to manage simple dynamic string vectors a-la argv
 =========================================================================

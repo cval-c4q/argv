@@ -28,7 +28,7 @@ struct argv *argv_init()
 
 long argv_find(struct argv *argv, const char *string)
 {
-	char **p = argv->argv;
+	char **p = argv ? argv->argv : NULL;
 	assert(argv != NULL && argv->argv != NULL);
 	if (string == NULL)
 		return -1;
